@@ -6,7 +6,7 @@ public class MET {
    
     public static void main(String[] args){
         
-        double level, weight, met, initialMet;
+        double level, met;
         String yesno, formattedMet;
         int metListIndex = 0;
         Scanner input = new Scanner(System.in);
