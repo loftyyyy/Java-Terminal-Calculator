@@ -40,7 +40,7 @@ public class METcsv {
         if (metListIndex > 0){
             //level*3.5*53/200 
             for (int i = 0; i < metListIndex; i++){
-                System.out.println("MET value for 60 and 15 mins in level " + values.get(i) +  " are: " + metList60.get(i) + " and " + metList15.get(i));
+                System.out.println("MET value for 60 and 15 mins in level " + values.get(i) +  " are: " + metList60.get(i) + " and " + metList15.get(i) + " Kcal");
                 System.out.println("\n");
             }
                     
