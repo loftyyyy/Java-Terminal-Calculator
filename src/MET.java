@@ -1,3 +1,4 @@
+import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -5,12 +6,12 @@ import java.util.Scanner;
 public class MET {
    
     public static void main(String[] args){
-        
-        double level, met;
+        double level, met, roundedMetNumber;
         String yesno, formattedMet;
         int metListIndex = 0;
         Scanner input = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("0.00");
+        df.setRoundingMode(RoundingMode.HALF_UP);
 
         ArrayList levelList = new ArrayList<>();
         ArrayList metList60 = new ArrayList<>();
@@ -26,12 +27,15 @@ public class MET {
                 System.out.print("MET level: ");
                 level = input.nextDouble();
                 levelList.add(level);
+                
+                // Initial Met without multiplying the weight 
                 met = (level * 3.5 * 53)/200;
-                formattedMet = df.format(met); 
+                roundedMetNumber = Math.round(met * 100.0) / 100.0;
+                formattedMet = df.format(roundedMetNumber); 
                 metList60.add(df.format(Double.parseDouble(formattedMet) * 60));
                 metListIndex++;
                 metList15.add(df.format(Double.parseDouble(formattedMet) * 15));
-
+                System.out.println(df.format(1.855));
 
             }else {
                 if (metListIndex > 0){
