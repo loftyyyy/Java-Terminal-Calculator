@@ -39,6 +39,7 @@ public class MET {
                     for (int i = 0; i < metListIndex; i++){
                         if (metList60.size() > i) {
                             System.out.println("MET value for 60 and 15 mins in level " + levelList.get(i) +  " are: " + metList60.get(i) + " and " + metList15.get(i));
+                            System.out.println("\n");
                         }
                     }
                     
