@@ -7,7 +7,7 @@ public class MET {
     public static void main(String[] args){
         
         double level, weight, met, initialMet;
-        String yesno;
+        String yesno formattedMet;
         int metListIndex = 0;
         Scanner input = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("0.00");
@@ -27,7 +27,7 @@ public class MET {
                 level = input.nextDouble();
                 levelList.add(level);
                 met = (level * 3.5 * 53)/200;
-                String formattedMet = df.format(met); 
+                formattedMet = df.format(met); 
                 metList60.add(df.format(Double.parseDouble(formattedMet) * 60));
                 metListIndex++;
                 metList15.add(df.format(Double.parseDouble(formattedMet) * 15));
