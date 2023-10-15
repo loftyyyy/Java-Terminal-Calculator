@@ -1,6 +1,7 @@
 <h1> What's inside? </h1>
 
 <ol>
-  <li>BASIC JAVA CALCULATOR</li>
-  <li>MET CALCULATOR</li>
+    <ul>Basic Arithmetic Calculator</ul>
+    <ul>Basic MET Calculator</ul>
+    <ul>Basic MET Calculator V2 using CSV input system</ul>
 </ol>
